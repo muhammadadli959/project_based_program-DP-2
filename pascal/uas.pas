@@ -2,20 +2,20 @@ program Gravitasi;
 
 uses crt;
 
-type
+type //membbuat tipe data baru dan membuatnya menjadi record
   TPlanet = record
     Nama: string;
     Gravitasi: real; 
   end;
 
 var
-  Planets: array[1..8] of TPlanet;
+  Planets: array[1..8] of TPlanet; //jumlah planet yang tersedia
   PilihanPlanet: integer;
   Massa, Jarak, Kecepatan: real;
 
-function HitungKecepatan(g: real; jarak: real): real;
+function HitungKecepatan(g: real; jarak: real): real; //inisialisasi variabel
 begin
-  HitungKecepatan := sqrt(2 * g * jarak);
+  HitungKecepatan := sqrt(2 * g * jarak); //proses perhitungan
 end;
 
 procedure TampilkanPlanets;
@@ -39,7 +39,7 @@ begin
   Planets[7].Nama := 'Uranus'; Planets[7].Gravitasi := 8.69;
   Planets[8].Nama := 'Neptunus'; Planets[8].Gravitasi := 11.15;
 
-  repeat
+  repeat //looping
     clrscr;
     TampilkanPlanets;
     writeln;
@@ -47,7 +47,7 @@ begin
     readln(PilihanPlanet);
 
     if (PilihanPlanet < 0) or (PilihanPlanet > 8) then
-      writeln('Pilihan anda tidak valid!')
+      writeln('Pilihan anda tidak valid!') //pesan yang muncul jika pengguna menginput 0
     else if PilihanPlanet > 0 then
     begin
 
