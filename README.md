@@ -10,4 +10,4 @@ berikut saya menyertakan link drive dokumentasi dan link youtube nya.
 
 link drive: https://drive.google.com/drive/folders/11olZg20-Oc_W4ebUGDG-735bLEaWgqyJ
 
-link youtube: 
+link youtube: https://youtu.be/TwYhWA0jHxo?feature=shared
